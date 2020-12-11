@@ -1,3 +1,7 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>PAULA - Paraphrasing audio for universal listening audiences</title>
 <style type="text/css">
 /* Layout styling */
 html,
@@ -63,23 +67,9 @@ li {
   padding: 0 0.25em;
 }
 </style>
-<div id="cc">
-  <span id="cc-button"><button onclick="toggleSpeechRecognition(event)"><abbr title="Closed Captioning">CC</abbr> Click to caption</button></span>
-  <span id="cc-text" style="display: none;" onclick="toggleSpeechRecognition(event)" tabindex="0">Begin speaking. Click to stop.</span>
-</div>
 
-<article>
-  <h1>HTML5 Closed Captioning</h1>
   
-  <ol>
-    <li>Open this page in Chrome desktop (25+)</li>
-    <li>Click button to begin captioning</li>
-    <li>Allow use of microphone</li>
-    <li>Begin talking. May need to pause occasionaly.</li>
-    <li>Click to caption stop</li>
-  </ol>
-</article>
-
+  
 <script type="text/javascript">
 var cc = document.getElementById('cc-text');
 var button = document.getElementById('cc-button');
@@ -133,3 +123,26 @@ function toggleSpeechRecognition(event) {
   }
 }
 </script>
+
+  </head>
+<body>
+
+  <div id="cc">
+    <span id="cc-button"><button onclick="toggleSpeechRecognition(event)"><abbr title="Closed Captioning">CC</abbr> Click to caption</button></span>
+    <span id="cc-text" style="display: none;" onclick="toggleSpeechRecognition(event)" tabindex="0">Begin speaking. Click to stop.</span>
+  </div>
+
+  <article>
+    <h1>HTML5 Closed Captioning</h1>
+
+    <ol>
+      <li>Open this page in Chrome desktop (25+)</li>
+      <li>Click button to begin captioning</li>
+      <li>Allow use of microphone</li>
+      <li>Begin talking. May need to pause occasionaly.</li>
+      <li>Click to caption stop</li>
+    </ol>
+  </article>
+
+</body>
+</html>
